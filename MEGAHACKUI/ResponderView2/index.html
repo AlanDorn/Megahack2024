@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responder Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-container">
+            <div class="gps-map">
+                <img src="WazePic.PNG">
+            </div>
+            <div class="overlay-item eta-overlay">
+                Estimated Time of Arrival: <span id="eta">5 Minutes</span>
+            </div>
+            <div class="overlay-item status-overlay">
+                <label for="statusDropdown">Current Status:</label>
+                <select class="form-control" id="statusDropdown">
+                    <option>Idle</option>
+                    <option>Responding</option>
+                    <option>On Scene</option>
+                    <option>On Break</option>
+                </select>
+            </div>
+            <div class="overlay-item weather-overlay">
+                Current Weather: <span id="weather"></span>
+            </div>
+            <div class="overlay-item responders-overlay">
+                Other Responders en route: <span id="otherResponders">2 Ambulances</span>
+            </div>
+            <div class="overlay-item emergency-overlay">
+                Type of Emergency: <span id="emergencyType">Robbery In Progress</span>
+              </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

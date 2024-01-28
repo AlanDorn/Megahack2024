@@ -1,0 +1,62 @@
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .weather-overlay {
+    margin-top: 10px;
+  }
+.gps-map img {
+    width: 100%; /* Reducing the image width to 80% of its container */
+    height: 100%; /* To maintain aspect ratio */
+    display: block; /* To prevent inline default spacing */
+    margin: 0 auto; /* To center the image in its container */
+}
+.gps-map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Adjust as necessary */
+    height: 100%; /* Adjust as necessary */
+    background: #ddd; /* Placeholder for the GPS map */
+    z-index: 1;
+    border: 2px solid #666; /* Placeholder styling */
+}
+
+.overlay-item {
+    position: absolute;
+    right: 10px; /* Spacing from the right edge of the dashboard container */
+    width: 200px; /* Fixed width for overlay items */
+    background: rgba(0, 0, 0, 1.0); /* Semi-transparent overlay */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    z-index: 2;
+    margin-top: 20px; /* Increased spacing between overlay items */
+}
+
+/* Adjust the top property values to space out the items appropriately */
+.eta-overlay {
+    top: 20px;
+}
+
+.status-overlay {
+    top: 100px; /* Adjust based on the content height of the .eta-overlay */
+}
+
+.weather-overlay {
+    top: 200px; /* Adjust based on the content height of the .status-overlay */
+}
+
+.responders-overlay {
+    top: 320px; /* Adjust based on the content height of the .weather-overlay */
+}
+
+.emergency-overlay {
+    margin-top: 10px; /* Add spacing below the weather overlay */
+    /* Add additional styling as needed */
+  }
